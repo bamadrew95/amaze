@@ -1,0 +1,22 @@
+{
+  "name": "amaze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamadrew95/amaze.git"
+  },
+  "author": "Andrew McGowin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bamadrew95/amaze/issues"
+  },
+  "homepage": "https://github.com/bamadrew95/amaze#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

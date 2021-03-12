@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+
+.site-header {
+  margin: 0;
+  background: $p-clr;
+  color: set-text-clr($p-clr);
+
+  &__container {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: relative;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .custom-logo-link {
+    .custom-logo {
+      display: block;
+    }
+  }
+
+  .site-title {
+    margin: 0 2rem 0 1em;
+  }
+
+  .header-menu__btn {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0 0 auto;
+    padding: 0.5rem;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10;
+
+    &:hover .btn-line {
+      background-color: $p-clr;
+    }
+
+    &.close {
+      .btn-line:nth-child(1) {
+        transform: rotate(135deg) translate(7px, -7px);
+      }
+
+      .btn-line:nth-child(2) {
+        transform: rotate(315deg);
+      }
+
+      .btn-line:nth-child(3) {
+        transform: rotate(225deg) translate(7px, 7px);
+      }
+    }
+
+    .btn-line {
+      margin: 0 0 0.4rem 0;
+      height: 0.25rem;
+      width: 2rem;
+      background-color: $clr-light;
+      border-radius: 0.25rem;
+      @include fade;
+      transition-property: opacity, transform, background-color;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .main-menu__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    .logo-container {
+      justify-content: center;
+      align-items: center;
+      background: rgba($clr-dark, 0.75);
+
+      .site-logo {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+}

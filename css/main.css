@@ -1,0 +1,212 @@
+.main-menu__container {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  width: 100%;
+  height: 100%;
+  transition: 300ms ease-in-out;
+}
+.main-menu__container.show {
+  left: 0;
+}
+
+.main-menu .main-menu-list {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-menu .main-menu-list .menu-item {
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.25rem;
+  text-align: center;
+  transition: 300ms ease-in-out;
+  transition-property: background-color, color;
+}
+.main-menu .main-menu-list .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: black;
+}
+.main-menu .main-menu-list .menu-item a {
+  display: block;
+  padding: 1rem 0;
+}
+
+.site-footer {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+}
+.site-footer .menu-container {
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site-footer .menu-container .footer-menu-list {
+  display: flex;
+  justify-content: center;
+}
+.site-footer .menu-container .footer-menu-list .menu-item {
+  margin: 0;
+  font-size: 1.1rem;
+  transition: 150ms ease-in-out;
+  transition-property: color;
+}
+.site-footer .menu-container .footer-menu-list .menu-item:hover {
+  color: black;
+}
+.site-footer .menu-container .footer-menu-list .menu-item a {
+  display: block;
+  margin: 0 0.25rem;
+  padding: 0.25rem 1rem;
+}
+.site-footer .copyright {
+  margin: 0.5rem;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* + * {
+  margin-top: 1em;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  all: unset;
+}
+
+#wpadminbar {
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 24px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+
+.flex {
+  display: flex;
+  margin: 0;
+}
+
+.content-container {
+  width: 960px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.site-header {
+  margin: 0;
+  background: black;
+  color: white;
+}
+.site-header__container {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: relative;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.site-header .custom-logo-link .custom-logo {
+  display: block;
+}
+.site-header .site-title {
+  margin: 0 2rem 0 1em;
+}
+.site-header .header-menu__btn {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0 0 auto;
+  padding: 0.5rem;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+}
+.site-header .header-menu__btn:hover .btn-line {
+  background-color: black;
+}
+.site-header .header-menu__btn.close .btn-line:nth-child(1) {
+  transform: rotate(135deg) translate(7px, -7px);
+}
+.site-header .header-menu__btn.close .btn-line:nth-child(2) {
+  transform: rotate(315deg);
+}
+.site-header .header-menu__btn.close .btn-line:nth-child(3) {
+  transform: rotate(225deg) translate(7px, 7px);
+}
+.site-header .header-menu__btn .btn-line {
+  margin: 0 0 0.4rem 0;
+  height: 0.25rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  transition: 300ms ease-in-out;
+  transition-property: opacity, transform, background-color;
+}
+.site-header .header-menu__btn .btn-line:last-child {
+  margin-bottom: 0;
+}
+.site-header .main-menu__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.site-header .main-menu__container .logo-container {
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+}
+.site-header .main-menu__container .logo-container .site-logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.wrapper .grid-item {
+  margin: 0;
+  outline: 1px solid red;
+}
+
+/*# sourceMappingURL=main.css.map */

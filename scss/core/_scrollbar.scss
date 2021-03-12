@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+// SCROLLBAR STYLES
+
+/* width */
+::-webkit-scrollbar {
+  width: 24px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: $clr-dark;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: lighten($clr-dark, 20);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: lighten($clr-dark, 40);
+}

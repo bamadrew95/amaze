@@ -1,0 +1,92 @@
+@use '../abstracts' as *;
+
+//  NAV MENU STYLES
+
+// Main Header Menu
+
+.main-menu__container {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  width: 100%;
+  height: 100%;
+  @include fade;
+
+  &.show {
+    left: 0;
+  }
+}
+
+.main-menu {
+  .main-menu-list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    background: rgba($clr-dark, 0.5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .menu-item {
+      width: 100%;
+      margin: 0;
+      background-color: rgba($clr-dark, 0);
+      font-size: 1.25rem;
+      text-align: center;
+      @include fade;
+      transition-property: background-color, color;
+
+      &:hover {
+        background-color: rgba($clr-dark, 0.25);
+        color: $p-clr;
+      }
+
+      a {
+        display: block;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+// Main Footer Menu
+
+.site-footer {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: $clr-dark;
+  color: $clr-light;
+
+  .menu-container {
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .footer-menu-list {
+      display: flex;
+      justify-content: center;
+
+      .menu-item {
+        margin: 0;
+        font-size: 1.1rem;
+        @include fade-short;
+        transition-property: color;
+
+        &:hover {
+          color: $p-clr;
+        }
+
+        a {
+          display: block;
+          margin: 0 0.25rem;
+          padding: 0.25rem 1rem;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin: 0.5rem;
+  }
+}

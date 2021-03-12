@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+@mixin fade-short {
+  transition: $transition-time-short ease-in-out;
+}
+
+@mixin fade {
+  transition: $transition-time-med ease-in-out;
+}
+
+@mixin fade-long {
+  transition: $transition-time-long ease-in-out;
+}

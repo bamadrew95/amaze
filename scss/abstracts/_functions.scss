@@ -1,0 +1,8 @@
+// Call Black or white text based on background
+@function set-text-clr($clr) {
+  @if (lightness($clr) >= 50) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
